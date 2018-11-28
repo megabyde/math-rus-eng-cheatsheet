@@ -1,0 +1,1054 @@
+\documentclass[a5paper, 10pt, twoside, numbers=enddot]{scrartcl}     
+
+\defaulthyphenchar=127
+\usepackage{cmap}
+\usepackage[T2A, T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage[english, russian]{babel} 
+\usepackage{indentfirst}  
+
+\usepackage[left=1cm, right=1cm, top=1.5cm, bottom=2cm]{geometry}  
+\usepackage{microtype}
+
+\usepackage{setspace}
+\onehalfspacing
+
+\setlength{\footskip}{1 cm}
+\setlength{\parindent}{1 cm}
+
+\usepackage{enumerate, xspace, calc}
+
+\usepackage[
+  unicode, 
+  colorlinks, 
+  linkcolor=blue,
+  citecolor=red,
+  bookmarksnumbered=true,
+  pdftitle={},
+  pdfauthor={}
+]{hyperref}
+
+\renewcommand{\theenumii}{\asbuk{enumii}}
+\renewcommand{\dot}{\textbullet\xspace}
+\newcommand{\cor}{\textit{or}\xspace}
+\newcommand{\word}{$\sim$}
+\newcommand{\eg}{\textit{e.\,g.,}\xspace}
+
+\newcommand{\dictchar}[1]{
+  \goodbreak\vspace{\baselineskip}% 
+  \LARGE\textbf{#1}\normalsize
+  \par\nopagebreak
+  \vspace{0.35\baselineskip}  
+}
+
+\newcommand{\dictentry}[2]{
+  \hspace{1.2em}%
+  \parbox[t]{\textwidth-1.4em}{\raggedright\hspace{-1.4em}{\textbf{#1}}{ #2}}%
+  \vspace{0.35\baselineskip}  
+  \par%
+}
+
+% ----------------------------------------------------------------------------------
+\begin{document}
+ 
+\begin{enumerate}
+  \item	При переводах необходимо использовать американский вариант правописания: например, <<analyze>>, а не <<analyse>>; <<analog>>, а не <<analogue>>; <<modeling>>, а не <<modelling>>; <<formulas>>, а не <<formulae>>; и т.\,д.
+
+  \item Употребление артиклей: помните те немногие случаи, когда употребление того или иного артикля (или отсутствие артикля) обязательно, среди них:
+  \begin{itemize}   
+    \item Фраза <<такой (такая, такое) \ldots>> при переводе требует неопределённого артикля (нет артикля во множественном числе) после слова <<such>>. \\ [4pt] \textsf{
+	   Такая функция обязательно существует. \\ 
+	   Such a function necessarily exists. \\ [4pt]
+     Такие функции обязательно существуют. \\
+     Such functions necessarily exist.}
+
+   \item Сравнительной степени прилагательного в роли определения должен; как правило, предшествовать неопределённый артикль. \\ [4pt] \textsf{
+     Для решения задачи необходим более эффективный алгоритм. \\
+     For the problem to be solved a more effective algorithm is required.}
+     
+   \item Превосходной степени прилагательного в роли определения, должен предшествовать определённый артикль. \\ [4pt] \textsf{
+     Наиболее эффективная процедура была разработана в работе [1]. \\
+     The most efficient procedure was developed in [1].}
+
+   \item Обратите внимание на отсутствие артикля перед словом <<formula>>, за которым следует её номер. В данном случае слову <<formula>> было присвоено <<имя собственное>> "--- её номер, поэтому употребление артикля (определённого или неопределённого) избыточно. Сюда же относятся слова Section, Table, Figure (Fig.), Equation (Eq.) и т.\,д. \\ [4pt] \textsf{
+     Формулой (1) исчерпываются все возможные случаи. \\
+     Formula (1) exhausts all possible cases.}
+  
+   \item Никогда не ставьте артикль перед словом <<another>>. Ситуация со словом <<other>> "--- более сложная: а) в значении <<какие-то другие>>, которое аналогично употреблению слова <<another>>, определенный артикль перед, <<other>> никогда не ставится; б) в значении <<другие (другой)>> (не тот, о котором речь шла выше), перед словом <<other>> всегда ставится определенный артикль, например: <<We had two pencils. I took one pencil, the other pencil is for you>>. <<The system comprises three equations. The first equation is similar to Eq. (1.1), while, the other two equations reflect peculiarities of the physical system being considered. \\ [4pt] \textsf{
+     Другой случаи был рассмотрен в [1]. \\
+     Another case has been considered in [1].}
+  
+   \item Перед порядковыми числительными употребляется определённый артикль. \\ [4pt] \textsf{
+     Второе уравнение в системе (3) не имеет решения. \\
+     The second equation in system (3) has no solution.}
+
+   \item \textsf{С вышеупомянутой задачей связан ряд (несколько) приложений. \\ 
+     A number of applications are connected with the foregoing problem. \\ [4pt]
+     \textbf{но} \\ [4pt]
+     Число приложений, связанных с вышеупомянутой задачей, велико. \\
+     The number of applications connected with the foregoing problem is large.}
+  \end{itemize}   
+
+  \item Употребляйте слово <<rather>> в негативном контексте, в позитивном контекст употребляйте слово <<quite>>, например: <<The convergence of the series is rather bad>>, но <<The convergence of the series is quite good>>.
+
+  \item Обратите внимание на употребление предлогов времени: by, at, since, till; during, in, for.
+  Первые четыре предлога (by, at, since, till) относятся к определённому моменту времени, а предлоги <<in>>, <<during>>, <<for>> относятся к временному промежутку.
+  \begin{enumerate}
+    \item <<by>> отвечает на вопрос <<к какому времени>>. например: \\ [4pt]
+    \textsf{By the time the processor finishes the calculation of the matrix, another processor will have already started finding the solution to the system.\\
+    К тому моменту, когда процессор закончит вычисление матрицы, Другой процессор уже начнёт искать решение системы.\\ [4pt]
+    The research is to be finished by August, 1992. \\
+    Исследования должны быть завершены к августу 1992 г.}
+    
+    \item <<at>> отвечает на вопрос <<в какой момент времени>>:\\ [4pt]
+    \textsf{At this, time moment a transition occurs from one state to another.\\
+    B этот момент времени происходит переход из одного состояния в другое.}
+    
+    \item <<since>> отвечает на вопрос <<начиная с какого времени>> и всегда употребляется (в этом значении, а не в значении <<поэтому>>) с Present (или Past) Perfect:\\ [4pt]
+    \textsf{Since that time scientists have been using this method.\\
+    С тех пор учёные используют этот метод.\\ [4pt]}
+    В высокопарном стиле можно вместо <<since>> использовать <<ever since>>.
+    
+    \item <<till>> отвечает на вопрос <<до какого времени>>:\\ [4pt]
+    \textsf{Till the discovery of neutrons a <<sandwich>> model of nucleus had been used.\\
+    До открытия нейтрона использовалась протон-электронная модель ядра.}
+    
+    \item <<in>> отвечает на вопрос <<за (через) какое время>>:\\ [4pt]
+    \textsf{The computation can be finished in an hour.\\
+    Расчеты могут быть закончены за (через) один час.\\ [4pt]
+    I will  be back in five minutes.\\
+    Я вернусь через пять минут.\\ [4pt]}
+    Обратите внимание, что то же самое можно сказать, используя оборот <<it will take \ldots do smth.>>, например, <<It will take an hour to compute the matrix>>.
+    
+    \item <<during>> отвечает на вопрос <<когда>> или <<во время чего>> и используется для указания на то, что два процесса происходят одновременно, с акцентом на одновременность:\\ [4pt]
+    \textsf{During the calculation of the matrix other processors can compute the free term of the system.\\
+    Во время вычисления матрицы другие  процессоры могут вычислять свободный член системы.\\ [4pt]}
+    Распространённой ошибкой является употребление предлога <<during>> вместо предлога <<for>>.
+    
+    \item <<for>> отвечает на вопрос <<в течение какого времени (на какое время)>>, с акцентом на продолжительность временного промежутка:\\ [4pt]
+    \textsf{I will go out for half an hour.\\
+    Я отойду на полчаса.\\ [4pt]
+    Trajectories of the complete system can remain near it for a time period of order unity.\\
+    Траектории могут оставаться около него в течение промежутка времени порядка единицы.}
+  \end{enumerate}
+  
+  \item Оборот <<известно, что \ldots>> характерен, для русской научной лексики, в то  время как оборот <<it is known that \ldots>>, который является дословным переводом, в английской научной лексике употребляется редко. Обычно в предложении, которое содержит данный оборот, содержится указание на то откуда известно, например, ссылка на работу. Если это так, то в переводе необходимо указать авторов данной работы и строить на этом перевод предложения, например: \\ [4pt]
+  \textsf{Известно [13], что эти операторы имеют простые собственные числа.\\
+  Smith and Vensori [13] showed that these operators have simple eigenvalues.}
+
+  \item Использование существительного в роли определения. Следует избегать  употребления существительного в роли определения, если основное слово  обозначает действие над данным существительным, например: не следует  переводить <<решение системы>> Как <<the system solution>>, правильный перевод <<the solution of system>>.\\ [4pt]
+  Избегайте слишком длинных (более трех определений) определительных рядов. Если без этого не удается обойтись "--- объединяйте члены определительного ряда, которые связаны друг с другом, при помощи дефиса, например <<linear-equation system>>.\\ [4pt] 
+  С другой стороны, не используйте <<of>>,  если использование существительного в роли определения оправдано, например, <<the convergence rate>>, а не <<the rate of convergence>> или <<the reaction temperature>>, а не <<the temperature of reaction>>.\\ [4pt]
+  He используйте существительное в роли определения, если за ним следуют слова или выражения, которые по смыслу или грамматически связаны с данным существительным, а не с определяемым словом, например, фраза <<температура реакции, описанной в [1]>> должно переводиться как <<the temerature оf reaction described in [1], а не <<the reaction temperature described in [1]>>.
+  
+  \item Никогда не используйте <<of>> после герундия перед прямым дополнением "--- это грубая грамматическая ошибка. Чтобы лучше запомнить это правило, можно провести следующую аналогию с русским языком: <<of>> в русском языке соответствует родительному падежу, в то же время прямое дополнение) после деепричастия в русском языке всегда стоит в винительном падеже (а не в родительном!) "--- <<делая кого, что>> $\rightarrow$ <<doing smth.>>, а не <<doing of smth.>>. Тем не менее, герундиальные формы глаголов часто используются в английском языке в качестве существительных (например, processing, testing и др.). Если такое употребление герундиальной формы в языке устоялось, то, в  соответствии с обычными правилами, после него можно ставить <<of>>, например, <<processing of experimental data>>.\\ [4pt]
+  Никогда не используйте герундий в роли существительного, если существительное с тем же смыслом в языке уже существует, например: <<employment of this representation>>, а не <<employing of this representation>> или <<solution of the system>>, а не <<solving of the system>>. 
+  
+  \item Делайте различие между <<may>> и <<can>>. <<May>> обозначает моральную категорию (т.\,е. кто-то разрешил это сделать, это позволено делать), в то время как <<can>> обозначает физическую возможность что-то сделать, осуществимость действия, выражаемого основным глаголом. Употребляйте <<may>> с глаголами, обозначающими мыслительную деятельность "--- think, believe, consider, assume и т.\,д.
+  
+  \item Глаголы allow, permit, enable употребляются только в соответствии со  следующими схемами:\\ [4pt] \textsf{
+  allow smb. to do smth.\\
+  allow smth. to be done\\
+  allow smth.\\ [4pt]}
+  Употребление <<allow to do smth.>> не допускается. Если возникают трудности с построением одной из конструкций, приведенных выше, всегда можно употребить безличное <<one>>, например:\\ [4pt] \textsf{
+  This equation altows one to calculate the value of $f(x)$.\\ [4pt]
+  \textbf{или}\\ [4pt]
+  This equation allows the value of $f(x)$ to be calculated.}
+  
+  \item Используйте в переводе следующие сокpaщения: \textsf{
+  \begin{center}
+    \begin{tabular}{lll}
+    equation  & $\rightarrow$ & Eq. \\
+    equations & $\rightarrow$ & Eqs. \\
+    figure    & $\rightarrow$ & Fig. \\
+    figures   & $\rightarrow$ & Figs. \\	
+    \end{tabular}
+  \end{center}}
+  если за словом следует номер, например, <<Eq. (1)>>, но <<this equation>> (обратите внимание на обязательный пробел после точки в сокращении). Если сокращаемое слово стоит и начале предложения, то оно не сокращается, например:\\ [4pt] \textsf{
+  This is eaisily seen from Eq. (1).\\ [4pt]
+  \textbf{но}\\ [4pt]
+  Equation (1) clearly shows that. }
+  
+  \item Имена собственные: 
+  \begin{enumerate}  
+    \item В названиях теорем, равенств, неравенств и т.\,д., образованных от имён собственных (фамилии учёных) придерживайтесь следующего правила: употребляйте притяжательный падеж, если перед словосочетанием нет артикля, и не употребляйте притяжательный падеж, если артикль (определённый или неопределённый) имеется, например:\\ [4pt] \textsf{
+    Cauchy's operator\\
+    the Cauchy operator}
+    
+    \item Обороты, образованные по схеме <<прилаг. (или сущ.) + по + фамилия>> "--- например, <<непрерывный по Липшицу>>, следует переводить как <<name + adjective (or noun.)>>, например, <<Lipschitz continuous>> или <<Lyapunov stability>> (<<устойчивость по Ляпунову>>).
+  \end{enumerate}
+  
+  \item Перевод слова <<именно>>. Слово <<именно>> употребляется в русском языке в двух различных контекстах.
+  \begin{enumerate}   
+    \item Для того, чтобы подчеркнуть, что данное действие было выполнено этим, а не каким-либо другим aгeнтом, например:\\ [4pt] \textsf{
+    Именно этот эффект обуславливает такое поведение системы.\\ [4pt]}
+    В данном контексте данный оборот переводится следующим образом:\\ [4pt] \textsf{ 
+    It is this phenomenon that accounts for such a behaviuor of the system.}
+    
+    \item Для указания начала расшифровки предыдущего члена предложения. В данном контексте слово <<именно>> чаще всего употребляется вместе с союзом <<а>> "--- <<а именно>>, например:\\ [4pt] \textsf{
+    Данный эффект объясняется двумя причинами, а именно, большим градиентом температуры и плохой теплопроводностью стенок.\\
+    This effect is accouted for by two reasons, namely large temperature gradient and a poor heat conductivity of the walls.\\ [4pt]}
+    При переводе данного контекста, слова <<а именно>> можно просто опускать, заменяя их на двоеточие или тире; или использовать латинское выражение <<viz.>>, которое является точным синонимом <<namely>>.
+  \end{enumerate}
+    
+  \item Согласование числа надлежащего и сказуемого.  
+  \begin{enumerate}   
+    \item Помните имена существительные, которые формально имеют множественное число, но должны употребляться со сказуемым в единственном числе, если речь идёт о данных объектах, взятых и совокупности, а не по-отдельности: \textsf{
+    \begin{center}
+      \begin{tabular}{lllll}
+      knoweledge & news     & money  & information & contents\\
+      dozen      & none     & range  & couple      & group\\
+      number     & series   & data   & major       & pair\\
+      variety    & progress & advice & hair        & fruit
+      \end{tabular}
+    \end{center}}  
+    Например:\\ [4pt] \textsf{
+    The series is arranged in order of decreasing size.\\ [4pt]
+    \textbf{но}\\ [4pt]
+    A series of experiments were performed.}
+    
+    \item Единицы измерения считаются собирательными существительными и употребляются со сказуемом в единственном числе, например:\\ [4pt] \textsf{
+    To test the effect, 5 g of the substance was taken.\\ [4pt]
+    Ten meters or a copper wire  serves as a heat conductor.\\ [4pt]
+    Two years is needed to complete the experiments.}
+    
+    \item Составное подлежащее, содержащее слова <<each>>, <<every>>, могут  употребляться со сказуемом в единственном числе, например:\\ [4pt] \textsf{
+    Every value of $n$ is to be tested separately.}
+  \end{enumerate}
+    
+  \item Использование дефиса.
+  \begin{enumerate}   
+    \item Префиксы, перечисленные ниже, не отделяются дефисом при употреблении с нарицательными существительными и прилагательными, но обязательно отделяются дефисом при использовании с именами собственными. \textsf{
+    \begin{center}
+      \begin{tabular}{llllll}
+      after    & de       & iso      & non      & pseudo  & trans\\
+      ante     & di       & metallo  & over     & re      & ultra\\
+      anti     & down     & mid      & photo    & semi    & un\\
+      auto     & electro  & macro    & physico  & sub	  & under\\
+      bi       & extra    & micro    & poly     & up      & visco\\
+      bio      & hyper    & mini     & post     & stereo  & \\
+      co       & hypo     & mono     & pre      & super   & \\
+      counter  & infra    & multi    & pro      & supra   & \\
+      \end{tabular}
+    \end{center}}
+    Например: \textsf{
+    \begin{center}
+      \begin{tabular}{lll}
+      premultiplied  & а не & pre-multiplied\\
+      multigrid      & а не	& multi-grid\\
+      nonposistive   & а не & non-positive\\
+      antisymmetric  & а не & anti-symmetric\\
+      cooperation    & а не & cooperation
+      \end{tabular}
+    \end{center}}   
+    Ho: <<pre-Newtonion era>> или <<non-Gaussian distribution>>
+    
+    \item Не отделяйте дефисом суффикс <<like>>, если только это не приводит к появлению тройной буквы <<l>>, например: <<chainlike>>, но <<ball-like>>.
+    
+    \item Не отделяйте дефисом суффикс <<fold>>, если только ему не предшествует цифра, например <<tenfold increase>> и <<multifold>>, но <<25-fold reduction>>.
+    
+    \item Не отделяйте дефисом суффикс <<wide>>, например: <<worldwide>>,\\ <<statewide>>.
+    
+    \item Используйте дефис для разделения префикса и химических названий, например: <<non-hydrogen>>.
+    
+    \item Не используйте дефис, если первое из сокращаемых слов заканчивается на <<-lу>>, например <<recently developed method>>.
+    
+    \item Используйте дефис для разделения числа и единицы измерения, если они используются в качестве составного определения, например: <<a 15-minute-exposure>>, <<a 20-g sample>>, <<a 20-m pipe>>.
+
+    \item Если два и более модификатора связаны с одним и тем же основным словом - используйте дефис после каждого модификатора, но не повторяйте основное слово, например: <<first- and second-order equations>>, <<high-, medium-, and low-frequency measurements>>.
+
+    \item Используйте дефис для отделения таких модификаторов, как <<well>>, <<ever>>, <<still>>, например: <<well-known scientist>>, <<ever-present danger>>, <<still-new equipment>>. Однако, дефис не используется, если данный модификатор  используется вместе с ещё одним модификатором, например: <<very well studied hypothesis>>.
+
+    \item Не используйте дефис, если модификатор является собственным именем, например: <<Foufier transform technique>>.
+
+    \item Не используйте дефис, если первое слово является сравнительной или превосходной степенью прилагательного, например:\\ <<higher temperature transtion>>. Исключения: <<least-square analysis>>,\\ <<nearest-neighbor interaction>>.
+
+    \item Используйте дефис в модификаторах, которые содержат имена числительные, например: <<three-dimensional equation>>, <<two-phase system>>. 
+
+    \item Используйте дефис в модификаторах, которые содержат глаголы или глагольные формы, например: <<laser-induсed reaction>>,\\ <<problem-solving abilities>>, <<immobilized-phase method>>.
+
+    \item Используйте дефис в модификаторах, которые состоят более, чем из двух слов, а также в модификаторах типа <<число-единица-измерения-слово>>, например: <<2-m-long pipe>>, <<3-year-old child>>, <<signal-to-noise ratio>>, <<out-of-plane distance>>.
+
+    \item Используйте дефис в составных прилагательных, используемых в качестве Predicate adjectives, например: <<This equation is first-order>>, <<This effect is temperature-dependent>>.
+  \end{enumerate}
+    
+  \item Использование запятой.
+  \begin{enumerate} 
+    \item В перечислительных рядах, содержащих три и более членов ставьте запятую перед <<and>> или <<or>> (включая библиографию и заголовок), например <<Ivanov, Petrov, and Kuliev [3] showed that \ldots>>, но  <<Smith and Venson [13] showed that \ldots>> или <<electrons, protons, and neutrons>>, но <<electrons and protons>>.
+    
+    \item Не ставьте запятую перед <<et al.>>, если ему предшествует только одна фамилия, например: <<Jones et al.>>, но <<Brown, Smith, et al.>>.
+    
+    \item Выделяйте запятыми обороты <<that is>>, <<for example>>, <<namely>>, <<viz.>>, <<e.\,g.>>, <<i.\,e.>>.
+    
+    \item Выделяйте запятыми придаточные предложения, которые вводятся  словами <<which>>, <<where>> и <<who>>, например: <<The setup, which is shown in Fig. 1, is intended for \ldots>>, <<The equation $f(x) = a_{11}\log N(e)$, where $a_{11}$ is а factor, can be solved numerically>>.
+    
+    \item Отделяйте запятой длинные вводные фразы, например: <<Because of an increasing amount of water in the substance, it is not surprising to observe intense hydrogen lines in the spectrum>>.
+  \end{enumerate}
+    
+  \item Перевод слова <<достаточно>> используемого в качестве модификатора.
+  \begin{enumerate}   
+    \item Если словосочетание <<достаточно + полная форма прилагательного>> используется в качестве определения, то данный оборот следует переводить как <<sufficiently small + adjective>>, например, <<a sufficiently small value of the parameter>>.
+    
+    \item Конструкцию <<достаточно + краткая форма прилагательного>> следует переводить как в следующем примере: <<If the value of this parameter is small enough equation (1) can be rewrltten as \ldots>>.
+    
+    \item Конструкции <<достаточно + краткая форма прилагательного + для того, чтобы>> следует переводить как в следующем примере: <<If the value of $N$ is large enough to ensure, that \ldots>>.
+    
+    \item Перевод существительных с модификаторами, указывающими их параметры. Обороты типа <<кабель длиной 10 м>> или <<отверстие диаметром 5 мм>> следует переводить как (обратите внимание на употребление артикля и предлога <<of>>):\\ [4pt] \textsf{
+    a cable with a length of 10 m\\
+    a 10-m-long cable\\
+    a hole with a diameter of 5 mm\\
+    a hole 5 mm in diameter\\ [4pt]}
+    Неопределённый артикль в примерах, приведённых выше, может меняться на определённый в зависимости от контекста.\\ [4pt]
+    Однако, если число вместе с единицей измерения имеет буквенное обозначение, например, <<резистор с сопротивлением $R=10$ Ом>> следует переводить как <<a resistor with resistance $R=10\ \Omega$>>. Обратите внимание на отсутствие артикля и отсутствие предлога <<of>>.
+  \end{enumerate}
+    
+  \item Использование деепричастных оборотов. При использовании  деепричастных оборотов, необходимо, чтобы было ясно, кто выполняет действие, выражаемое деепричастием (обычно это должно быть подлежащее основного предложения), например:\\ [4pt] \textsf{
+  Using the procedure described previously, we can evaluate the partition function.\\ [4pt]
+  \textbf{или}\\ [4pt]
+  The partition function can be evaluated by using the procedure described previously.\\ [4pt]
+  \textbf{но не}\\ [4pt]
+  Using the procedure described previously, the partition function can be evaluated.\\ [4pt]}
+  Обратите внимание на отсутствие предлога <<by>> в первом предложении (действие, выражаемое деепричастием, выполняется подлежащим основным глаголом) и на его наличие во втором предложении.
+  
+  \item Избегайте <<цветистости>>, многословия и наукообразия, например: \textsf{
+  \begin{center}
+    \begin{tabular}{lll}
+    owing to the fact that      & $\rightarrow$ & because \\
+    subsequent to               & $\rightarrow$ & after \\
+    on the order of             & $\rightarrow$ & about \\
+    in the near future          & $\rightarrow$ & soon \\
+    at the present time         & $\rightarrow$ & now \\
+    by means of                 & $\rightarrow$ & by \\
+    it appears that             & $\rightarrow$ & apparently \\
+    of great importance         & $\rightarrow$ & important \\
+    in consequence of this fact & $\rightarrow$ & therefore \\
+    a very limited number of    & $\rightarrow$ & few \\
+    in spite of the fact that   & $\rightarrow$ & although		
+    \end{tabular}
+  \end{center}}
+  
+  \item Не пишите <<don't>>, а пишите <<do not>> и т.\,п., т.\,е. используйте полные формы.	
+  
+  \item Не путайте <<it's>> и <<its>>. <<It's>> "--- это краткая форма от <<it is>>, a <<its>> "--- это <<его, её>> по отношению к неодушевлённым предметам.
+  
+  \item Не забывайте, что <<cannot>> пишется вместе.
+\end{enumerate}
+
+% ----------------------------------------------------------------------------------
+\newpage
+\setlength{\parindent}{0pt}  
+\singlespacing
+
+\dictchar{А}
+\dictentry{абсолютно непрерывна} {absolutely continuous;}
+\dictentry{автоколебания} {self-oscillation;}
+\dictentry{автоматически выполняться} {to be automatically satisfied;}
+\dictentry{алгебра} {algebra;\\
+  \textbf{внешняя \word} exterior algebra;\\
+  \textbf{\word\ Хопфа} Hopf algebra;
+}
+\dictentry{аналитический} {analytic;}
+\dictentry{аппроксимация} {approximation;\\
+  \textbf{\word\ Бузинеска} Boussinesq approximation;
+}
+
+\dictchar{Б}
+\dictentry{без потери общности} {with no loss of generality;}
+\dictentry{безусловный} {unconditional;}
+\dictentry{бесконечномерный} {infinite-dimensional;}
+\dictentry{близкий} {close, proximate;\\
+  \textbf{\word е числа} proximate numbers;
+}
+\dictentry{быть в состоянии ч.-л. сделать} {to be able to do smth., to be capable of doing smth.;}  
+\dictentry{быть готовым к ч.-л.}{to be ready for smth. (\cor doing smth.), 
+  to be in position to~do smth. (\eg Now we are in a position to formulate the final result);
+}
+
+\dictchar{В}
+\dictentry{в дальнейшем} {in the sequel (\cor in the following);}
+\dictentry{включительно} {inclusive (\eg its $x$-derivatives up to the second order inclusive);}
+\dictentry{вложение} {imbedding, inclusion;\\
+  \textbf{\word\ в целом} global imbedding;\\
+  \textbf{отображение \word я} inclusion map;
+}
+\dictentry{вложенный} {imbedded;}
+\dictentry{вне области} {in the exterior of the domain;}
+\dictentry{внутри области} {in the interior of the domain;}
+\dictentry{возникать} {arise;\\
+  \textbf{\word ет естественный вопрос} the question naturally arises of \ldots;
+}
+\dictentry{вполне непрерывный} {completely continuous (compact, etc.);}
+\dictentry{в противном случае} {otherwise (\eg We assume that $\|\hat{\varphi}\| > 0$ 
+  [otherwise (2.16) is not needed in the proof]);}
+\dictentry{Вронскиан} {Wronskian;}
+\dictentry{вспоминать} {recall, а не remind;}
+\dictentry{встречать препятствия} {encounter obstacles;}
+\dictentry{входить в уравнение как параметр} {enter equation as a parameter;}
+\dictentry{выколотый} {punctured (\eg a punctured neighborhood not containing eigenvalues of $B^m$);}
+\dictentry{выражение} {expression;\\
+  \textbf{\dot \word\ в квадратных скобках} expression in square brackets (\cor bracketed expression);
+  \textbf{\dot \word\ в круглых скобках} expression in parentheses (\cor parenthesized expression);
+  \textbf{\dot \word\ в фигурных скобках} expression in curly braces;
+  \textbf{\dot \word\ под знаком интеграла} integrand;
+  \textbf{\dot \word\ под знаком радикала} radicand;
+}
+\dictentry{выше} {in the foregoing, in the above;  
+  (\eg In the foregoing we defined matrix $S$ to be a product of two matrices.);\\ 
+  \textbf{\dot как и выше} as in the foregoing;
+}
+\dictentry{выполняться (об уравнении, неравенстве, теореме и~т.\,д.)} {hold (\cor be valid);}
+\dictentry{вышеупомянутый} {foregoing;\\
+  \textbf{\dot при \word\ условиях} under the foregoing conditions;
+}
+ 
+\dictchar{Г}
+\dictentry{гиперболоид} {hyperboloid;\\
+  \textbf{усечённый однолистный \word\ вращения} truncated one-sheeted hyperboloid of revolution;
+}
+\dictentry{граница} {boundary;\\
+  \textbf{\dot внешняя \word} exterior boundary;
+}
+\dictentry{грань} {face, side, bound;\\
+  \textbf{нижняя \word} the greatest lower bound;\\
+  \textbf{верхняя \word} the least upper bound;
+}
+
+\dictchar{Д}
+\dictentry{давать} {yield, а не give (\eg Equation (5) yields ...);}
+\dictentry{делитель} {divisor;\\
+  \textbf{наибольший общий \word} greatest common divisor;
+}
+\dictentry{диаметр} {diameter;\\
+  \textbf{внешний \word} outside (а не outer) diameter, (o.d.);\\
+  \textbf{внутренний \word} inside (а не inner) diameter, (i.d);
+}
+\dictentry{дифференцируемый} {differentiable;\\
+  \textbf{дважды непрерывно \word} twice continuously differentiable;
+  \textbf{\dot непрерывно \word\ $n$ раз} $n$ times differentiable;
+  \textbf{\dot \word\ по $x$} $x$-differentiable (\cor differentiable
+with respect to $x$);
+  \textbf{\dot \word\ no Гато} G\^{a}teaux differentiable;
+  \textbf{\dot слабо \word} weakly differentiable;
+}
+\dictentry{для этого} {to this end (\cor to do this);}
+\dictentry{для краткости} {for brevity;}
+\dictentry{для определенности} {for definiteness;}
+\dictentry{для простоты} {for simplicity;}
+\dictentry{доказывать} {prove (proved, proved (а не proven));\\
+  \textbf{\dot по индукции} prove by induction;
+  \textbf{\dot \word\ от противного} prove by contradiction;
+}
+\dictentry{допустимый} {admissible;\\
+  \textbf{\word\ по Вольтерра} Volterra admissible;
+}
+\dictentry{друг друга} {one another, а не each other;}
+\dictentry{достаточно (нар.)} {1. sufficiently (\eg For sufficiently small values of the parameter we have \ldots), 2. enough (\eg let $\epsilon_\mu > 0$ be small enough to ensure that $\Theta(\epsilon) \in (0, T]$. The value of this function is small enough.), 3. rather, fairly, quite;\\
+  \textbf{\dot \word\ показать, что \ldots} it is sufficient to show that \ldots (\cor it suffices to show that \ldots);
+}
+\dictentry{достаточность} {sufficiency;}
+\dictentry{достигать} {attain, reach, amount to;\\
+  \textbf{\word\ максимума} attain a maximum;
+}
+\dictentry{дуга} {arc;\\
+  \textbf{круговая \word} circular arc;
+}
+
+\dictchar{Е}
+\dictentry{если \ldots, тогда \ldots, в противном случае \ldots} {if \ldots then \ldots, otherwise \ldots;}
+\dictentry{если и только если} {if and only if;}
+\dictentry{если не оговорено противное} {if nothing is said to the contrary;}
+\dictentry{единичный} {unit (\textit{see} матрица, оператор);}
+
+\dictchar{З}
+\dictentry{завершать доказательство} {complete the proof;}
+\dictentry{задача} {problem;\\
+  \textbf{\dot ставить \word у} pose the problem;
+  \textbf{\dot \word\ разрешима} the problem is solvable;
+  \textbf{\dot разрешимость \word и} solvability of the problem;
+  \textbf{\dot \word\ имеет единственное решение} the problem is uniquely solvable (\textit{or} the problem has a unique solution);
+  \textbf{\dot постановка \word и} statement of the problem (\textit{see} корректная, некорректная);
+  \textbf{\dot решать \word у} solve the problem;
+  \textbf{\dot сводить \word у} reduce the problem to;
+  \textbf{\dot \word\ сводится к} the problem is reducible to (\textit{or} the problem is reduced to);\\
+
+  \textbf{корректно-поставленная} well-posed problem;\\
+  \textbf{\word\ на собственные значения} eigenvalue problem;\\
+  \textbf{краевая \word} boundary-value problem;\\
+  \textbf{\word\ Коши} initial-value problem (Amer.), Cauchy problem (Europ.);\\
+  \textbf{некорректно-поставленная \word} ill-posed problem;\\
+  \textbf{обратная \word} inverse problem;\\
+  \textbf{смешанная \word} initial boundary-value problem;\\
+  \textbf{смешанная краевая \word} mixed boundary-value problem;\\
+  \textbf{спектральная \word} eigenvalue problem;\\
+  \textbf{\word\ Стефана} Stefan problem;\\
+  \textbf{\word\ Штурма"--~Лиувилля} Sturm"--~Liouviile problem;
+}
+\dictentry{за исключением} {except, except for (\eg a vector with all elements zero except the $j$-th, which is unity);}
+\dictentry{замена} {change, replacement;\\
+  \textbf{\dot \word\ переменных} variable change;
+}
+\dictentry{заметаемый} {spanned (\eg a hyperplane spanned by a maximum-dimension edge);}
+\dictentry{замкнутость} {closedness;}
+\dictentry{замкнутый} {closed;}
+\dictentry{замыкание} {closure;}
+\dictentry{значить} {imply, а не mean (\eg Equation (1) implies \ldots);}
+ 
+\dictchar{И}
+\dictentry{из} {from;\\
+  \textbf{\dot Из (1) видно, что \ldots} It is seen from (1) that \ldots, а не From (1) it is seen that  \dots;
+}
+\dictentry{избыточно} {superfluous (\eg This equation is superfluous in system (1.3).);}
+\dictentry{измерима по Лебегу} {Lebesgue measurable;}
+\dictentry{инвариант} {invariant;\\
+  \textbf{\word\ Римана} Riemann invariant;
+}
+\dictentry{инвариантный по отношению к оператору сдвига} {invariant under the translation operator;}
+\dictentry{индекс} {index (\textit{pl.} indices, а не indexes);\\
+  \textbf{верхний \word} superscript;\\
+  \textbf{\word\ Ляпунова} Lyapunov index;\\
+  \textbf{нижний \word} subscript;\\
+  \textbf{центральный \word} central index;
+}
+\dictentry{интеграл} {integral;\\
+  \textbf{\word\ Бохнера} Bochner integral;\\
+  \textbf{\word\ Лебега} Lebesgue integral;\\
+  \textbf{несобственный \word} improper integral;\\
+  \textbf{повторный \word} repeated integral;\\
+  \textbf{\word\ по контуру} contour integral;\\
+  \textbf{\word\ столкновений} collision integral;
+}
+\dictentry{интегрирование} {integration;\\
+  \textbf{\dot промежуток \word я} integration range;
+  \textbf{\dot \word\ по частям} integration by parts;
+  \textbf{почленное \word} term-by-term integration;
+}
+\dictentry{интегрируемый (который можно проинтегрировать)} {integrable;}
+\dictentry{интегродифференцирование} {integrodifferentiation;}
+\dictentry{интервал} {interval;\\
+  \textbf{полуоткрытый \word} half-open interval;
+}
+\dictentry{искомый} {sought;}
+\dictentry{исчерпывать} {exhaust (\eg The numbers $\nu_1,\ldots,\nu_k$ exhaust the set of eigenvalues of matrix $A$.);}
+
+\dictchar{К}
+\dictentry{касательность} {tangency;}
+\dictentry{класс} {class;\\
+  \textbf{\word\ эквивалентности} equivalence class;
+}
+\dictentry{коммутативность} {comnuitativity, а не commutivity;}
+\dictentry{коммутатор} {commutator;}
+\dictentry{коммутировать} {commute, а не commutate;}
+\dictentry{конечномерный} {finite-dimensional;}
+\dictentry{координата} {coordinate, а не co-ordinate;\\
+  \textbf{\dot начало \word} the origin;\\
+  \textbf{Декартовы \word ы} Cartesian coordinates;\\
+  \textbf{криволинейные \word ы} curvilinear coordinates;\\
+  \textbf{полярные \word ы} polar coordinates;\\
+  \textbf{сферические \word ы} spherical coordinates;\\
+  \textbf{цилиндрические \word ы} cylindrical coordinates;\\
+  \textbf{эллипсоидальные \word ы} ellipsoidal coordinates;
+}
+\dictentry{корень} {root;\\
+  \textbf{отличные (несовпадающие) \word и} distinct roots;\\
+  \textbf{двукратный \word} double root;\\
+  \textbf{простой \word} simple root;\\
+  \textbf{трехкратный \word} triple root;
+}
+\dictentry{корректная постановка задачи} {well-posedness of the problem;}
+\dictentry{кратное} {multiple;\\
+  \textbf{\dot \word\ $2\pi$} a multiple of $2\pi$;
+}
+\dictentry{кратность} {multiplicity;\\
+  \textbf{\dot \word\ корня} root multiplicity;\\
+  \textbf{\word\ собственного значения} eigenvalue multiplicity;
+}
+\dictentry{критерий} {criterion (\textit{pl.} criteria);\\
+  \textbf{\dot \word\ существования} criterion for (а не of) the existence (\textit{or} criterion for smth. to exist);
+  \textbf{\word\ компактности оператора Римана-Лиувилля} a criterion for the Riemann-Liouville operator to be compact;\\
+  \textbf{\word\ Арцелы} Arzel\`a criterion;\\
+  \textbf{\word\ Дини} Dini criterion;\\
+  \textbf{\word\ Рица} Riesz criterion;
+}
+\dictentry{кусочно-гладкая (-непрерывная, -постоянная и т.\,д.)} {piecewise-smooth (-continuous, -constant, etc.);}
+
+\dictchar{Л}
+\dictentry{легко} {easily;\\
+  \textbf{\dot~\word\ видеть, что \ldots} it is easily seen that, а не can be easily seen that \ldots;
+  \textbf{\dot~\word\ проверить} it is easy to verify (\eg This statement is easy to verify.);
+  \textbf{\dot~\word~решаемая методом} easily solved by the method;
+}
+\dictentry{лемма} {lemma;\\
+  \textbf{\word\ Гронуолла"--~Беллмана} Gronwall"--~Bellman lemma;
+}
+
+\dictchar{М}
+\dictentry{матрица} {matrix (\textit{pl.} matrices, а не matrixes);\\
+  \textbf{\dot \word, обратная к $A$} an inverse of $A$;
+  \textbf{\dot транспонированная \word} a transpose (не надо добавлять matrix);
+  \textbf{\dot сопряженная \word} a conjugate;
+  \textbf{\dot комплексно сопряженная \word} a complex conjugate;
+  \textbf{\dot обращать \word у} invert a matrix;
+  \textbf{\dot \word\ $n \times n$} an $n \times n$ matrix;\\
+ 
+  \textbf{блочная \word} block matrix;\\
+  \textbf{верхняя треугольная \word} upper triangular matrix;\\
+  \textbf{единичная \word} identity (\textit{or} unit) matrix;\\
+  \textbf{\word\ жесткости} stiffness matrix;\\
+  \textbf{кососимметричная \word} skew-symmetric matrix;\\
+  \textbf{плохо обусловленная \word} ill-conditioned matrix;\\
+  \textbf{нижняя треугольная \word} lower-triangular matrix;\\
+  \textbf{разреженная \word} sparse matrix, inflated matrix;\\
+  \textbf{самосопряженная \word} self-adjoint matrix;\\
+  \textbf{треугольная \word} triangular matrix;\\
+  \textbf{хорошо обусловленная \word} well-conditioned matrix;
+}
+\dictentry{метод} {method, procedure;\\
+  \textbf{итерационный \word\ Мозера} Moser iteration method;\\
+  \textbf{\word\ последовательных приближений} method of successive approximations;\\
+  \textbf{\word\ прямых} straight-line method;\\
+  \textbf{\word\ разделения переменных} variable-separation method;
+}
+\dictentry{метрика} {metric;\\
+  \textbf{\dot в \word е \ldots} in the metric of \ldots;\\
+  \textbf{Хаусдорфова \word} Hausdorff metric;        
+}
+\dictentry{многообразие} {manifold;\\
+  \textbf{приводимое алгебраическое \word} reducible algebraic manifold;
+}
+\dictentry{множество} {set;\\
+  \textbf{Борелево \word} Borel set;\\
+  \textbf{отталкивающее \word} repelling set;\\
+  \textbf{притягивающее \word} attracting set;
+}
+\dictentry{монотонно} {monotonically;\\
+  \textbf{\dot \word\ возрастающий} monotonically increasing;
+}
+\dictentry{монотонность} {monotonicity;}
+\dictentry{монотонный} {monotonic;}
+ 
+\newpage
+\dictchar{Н}
+\dictentry{на всем пространстве $H$} {on the whole of the space $H$;}
+\dictentry{накладывать требования на \ldots} {impose requirements on \ldots;}
+\dictentry{напоминать} {remind а не recall;}
+\dictentry{не более} {not more than, at most (\eg the equation has at most three distinct roots);}
+\dictentry{не менее} {not fewer than (with countable nouns), at least;}
+\dictentry{невырожденный (оператор, матрица)} {nonsingular;}
+\dictentry{не говоря о} {not to mention;}
+\dictentry{недифференцируема} {nondifferentiable;}
+\dictentry{недостаток места} {shortage of space (\eg shortage of space prevents us from reproducing this proof);}
+\dictentry{некорректная постановка задачи} {ill-posedness of the problem;}
+\dictentry{не обращаясь к} {without referring to;}
+\dictentry{необходимость} {necessity;}
+\dictentry{не обязательно совпадают} {are not necessarily identical (\textit{or} not necessarily coincide);}
+\dictentry{неограниченность} {unboundedness;}
+\dictentry{неограниченный} {unbounded;}
+\dictentry{непрерывность} {continuity;\\
+  \textbf{\dot \word\ в большом} continuity in the large;
+  \textbf{\dot \word\ в малом} continuity in the small;
+}
+\dictentry{непрерывный} {continuous;\\
+  \textbf{\dot \word\ слева (справа)} continuous to the left (right) (\textit{or} left (right) continuous);
+  \textbf{\dot \word\ по Липшицу} Lipschits continuous;
+}
+\dictentry{неприводимый} {irreducible;}
+\dictentry{непустой} {nonempty;}
+\dictentry{неравенство} {inequality;\\
+  \textbf{\word\ Гардинга} Garding inequality;\\
+  \textbf{двустороннее \word} double-sided inequality;\\
+  \textbf{\word\ Коши"--~Буняковского} Schwarz inequality;\\
+  \textbf{\word\ Минковского} Minkovski inequality;\\
+  \textbf{одностороннее \word} one-sided inequality;\\
+  \textbf{строгое \word} strict inequality;\\
+  \textbf{\word\ Юнга} Young inequality;
+}
+\dictentry{несколько слабее (сильнее и т.д.)} {somewhat weaker (stronger and so on);}
+\dictentry{не является гладкой функцией от $t$} {fails to be smooth function of $t$;}
+\dictentry{ноль} {zero, null;\\
+  \textbf{\dot нули функции} zeros (а не zeroes) of the function;
+}
+\dictentry{нормаль} {normal;\\
+  \textbf{внешняя \word} exterior normal;\\
+  \textbf{внутренняя \word} interior normal;\\
+  \textbf{единичная \word} unit normal;
+}
+\dictentry{нормировать} {normalize;\\
+  \textbf{\dot \word\ на единицу} normalize to the unit;
+}
+\dictentry{носитель} {support;\\
+  \textbf{\dot \word\ функции} support of the function;
+}
+
+\dictchar{О}
+\dictentry{обозначать} {denote;}
+\dictentry{обозначение} {notation, а не notations;}
+\dictentry{оболочка} {span (\eg the real linear span of the functions);}
+\dictentry{образованы \ldots} { are formed of (а не from) \ldots;}
+\dictentry{обратимость (матрицы)} {invertibility;}
+\dictentry{обратимый} {invertible;}
+\dictentry{обратный} {contrary (\textit{see} если не оговорено противное, задача, утверждение);\\
+  \textbf{\dot если предположить \word ое} if we assume the contrary;
+}
+\dictentry{обращаться (становиться равным)} {turn to, become;\\
+  \textbf{\dot \word\ в ноль} vanish, а не turn to zero;
+}
+\dictentry{общность} {generality;\\
+  \textbf{\dot без потери \word и} with no loss of generality;
+}
+\dictentry{ограниченность} {boundedness;}
+\dictentry{ограниченный} {bounded;\\
+  \textbf{\dot \word\ по} bounded with respect to;
+  \textbf{\dot \word\ сверху} bounded above;
+  \textbf{\dot \word\ снизу} bounded below;
+  \textbf{\dot не\word} unbounded;
+}
+\dictentry{однозначный} {single valued;}
+\dictentry{однозначно определять} {to determine uniquely;}
+\dictentry{однолистный} {one-sheeted;}
+\dictentry{однородно по $t$} {uniformly with respect to $t$ (\textit{or} uniformly in $t$);}
+\dictentry{ожидание} {expectation;\\
+  \textbf{математическое \word} mathematical expectation (\textit{or} просто expectation);
+}
+\dictentry{означать} {imply, а не mean (\eg Lemma 1 implies that \ldots);}
+\dictentry{окрестность} {neighborhood, а не vicinity;\\
+  \textbf{\dot в окрестности начала координат} in the neighborhood of the origin;
+}
+\dictentry{оператор} {operator;\\
+  \textbf{\word\ определенный на пространстве $L_{p_1}$ и действующий в $L_2$} operator defined on the space $L_{p_1}$ and acting on $L_2$;\\
+  \textbf{\word\ Лапласа"--~Белтрами} Laplace"--~Beltrami equation;\\
+  \textbf{\word\ Пуанкаре} Poincar\'e operator;\\
+  \textbf{\word\ Римана"--~Лиувилля} Riemann"--~Liouville operator;\\
+  \textbf{\word\ свертки} convolution operator;
+}
+\dictentry{опускать} {omit (\eg The arguments $x$ or $t$ of functions from $X^0_1$ will be sometimes omitted for brevity.), drop;}
+\dictentry{ослаблять} {weaken;}
+\dictentry{оставаться в силе} {remain in force;}
+\dictentry{остается неизменным} {remains unchanged, а не does not change;}
+\dictentry{отдельно} {separately;\\
+  \textbf{\dot рассматривать \word} consider separately (\eg We consider each of these cases separately.);
+}
+\dictentry{отличный (несовпадающий)} {distinct, а не different;\\
+  \textbf{\dot всюду \word\ от нуля} everywhere nonzero;
+}
+\dictentry{отображать $B$ в $B_0$} {map $B$ into $B_0$;}
+\dictentry{отображение} {mapping;\\
+  \textbf{\word\ в себя} mapping into itself;\\
+  \textbf{однозначное \word} one-to-one mapping;\\
+  \textbf{сжимающее \word} contracting mapping;
+}
+\dictentry{отражение} {reflection;\\
+  \textbf{\dot зеркальное \word\ относительно мнимой оси} mirror reflection in the imaginary axis;
+}
+
+\dictchar{П} 
+\dictentry{переменная} {variable;\\
+  \textbf{\dot замена \word ых} variable change;
+}
+\dictentry{перестановка} {permutation;}
+\dictentry{преходить} {change [over] to, switch [over] to, transform to;\\
+  \textbf{\dot \word\ в новую систему координат} transform to a new coordinate system;
+}
+\dictentry{периодичный с периодом $2\pi$ по аргументу $x$} {$2\pi$-periodic in the argument $x$;}
+\dictentry{поверхность} {surface;\\
+  \textbf{\word\ нулевого уровня} null-level surface;
+}
+\dictentry{подчеркивать} {stress, emphasize;}
+\dictentry{позволять} {allow, enable, permit, make it possible;\\
+  allow (permit, enable) smb. to do smth.;\\
+  allow smth. to be done;\\
+  Definition 1 makes it possible to compare the times when the level $R$ is reached.;
+}
+\dictentry{по крайней мере} {at least;\\
+  \textbf{\word\ так же быстро как} at least as fast as;
+}
+\dictentry{покрытие} {covering;}
+\dictentry{полагать $S=0.5$} {put $S=0.5$;}
+\dictentry{положительно определенный} {positive definite, а не positively definite;}
+\dictentry{полуограниченный} {semibounded;}
+\dictentry{полупрямая} {half-line;}
+\dictentry{полуцелый} {half-integer;}
+\dictentry{понимать} {understand, mean;\\
+  \textbf{\dot под решением уравнения (1) мы \word ем непрерывную функцию $f(x)$ такую-что \ldots} a solution of Eq. (1) is understood to be a continuous function $f(x)$ such that \ldots;
+}
+\dictentry{по определению} {by definition;}
+\dictentry{посредством} {by virtue of;}
+\dictentry{поступая как в \ldots} {proceeding as in \ldots;}
+\dictentry{попарно различные} {pairwise-distinct;}
+\dictentry{порядок} {order;\\
+  \textbf{\dot величина \word а $\varepsilon$} a quantity of order $\varepsilon$;
+}
+\dictentry{последовательность} {sequence;\\
+  \textbf{фундаментальная \word} fundamental sequence;
+}
+\dictentry{почленное} {term-by-term;}
+\dictentry{почти всюду (непрерывен, компактен и т.д.)} {almost everywhere (continuous, compact, etc.);}
+\dictentry{почти непрерывный (компактный и т.\,д.)} {almost continuous (compact etc.);}
+\dictentry{поэтому} {therefore, а не thus;}
+\dictentry{превосходить (быть больше)} {exceed;}
+\dictentry{предел} {limit;\\
+  \textbf{\dot \word\ слева (справа)} limit from the left (right);
+}
+\dictentry{предшествовать} {precede, to be first (\eg summation is first over the terms with plus sign and then over \ldots);}
+\dictentry{принимать} {take (\eg take the value of 0 and 1);\\
+  \textbf{\dot \word\ значения $0,1,2,3$} assume the values of $0,1,2,3$;
+  \textbf{\dot \word\ значения из $G$} run over $G$;
+}
+\dictentry{принцип} {principle;\\
+  \textbf{\word\ максимума Понтрягина} Pontryagin maximum principle;\\
+  \textbf{сильный \word\ максимума} strong maximum principle;
+}
+\dictentry{приравнивать} {equate;\\
+  \textbf{\dot \word\ коэффициенты при \ldots} equate the coefficients at \ldots;
+}
+\dictentry{приходить к} {arrive at, а не to;}
+\dictentry{проверка результатов (факта)} {verification of the results;}
+\dictentry{продолжать} {continue, extend;\\
+  \textbf{\dot \word\ $g_1,\ldots,g_k$ значением ноль на $(a,b)$} continue $g_1,\ldots,g_k$ by the value of zero to $(a, b)$;
+}
+\dictentry{продолжение} {continuation, extension;\\
+  \textbf{\word Фридрихса} Friedrichs extension;
+}
+\dictentry{производная} {derivative;\\
+  \textbf{\dot \word\ по $x$} derivative with respect to $x$;
+  \textbf{\dot \word\ по времени} time derivative;\\
+  \textbf{обыкновенная \word} ordinary derivative;\\
+  \textbf{старшая \word} leading derivative;\\
+  \textbf{\word\ Фреше} Frechet derivative;\\
+  \textbf{частная \word} partial derivative;
+}
+\dictentry{промежуток} {range;\\
+  \textbf{\word\ интегрирования} integration range:
+}
+\dictentry{пространство} {space;\\
+  \textbf{\dot \word\ над числовым полем} space over the number field;\\
+  \textbf{гильбертово \word} Hilbert space;\\
+  \textbf{Евклидово \word} Euclidean space;\\
+  \textbf{нуль-\word} null-space;\\
+  \textbf{предгильбертово \word} pre-Hilbert space;
+}
+\dictentry{прямые вычисления} {direct calculations;}
+
+\dictchar{Р} 
+\dictentry{размерность} {dimension, а не dimensionality;}
+\dictentry{разрешимость} {solvability;}
+\dictentry{разрыв} {discontinuity;\\
+  \textbf{\word\ первого рода} first-kind discontinuity;
+}
+\dictentry{раскладывать} {expand;\\
+  \textbf{\word\ по степеням малого параметра} expand in powers of small parameter;
+}
+\dictentry{распространять получившееся соотношение на все $\nu \in L_2$} {extend the resulting relation to all $\nu \in L_2$;}
+\dictentry{рассеяние на} {scattering at;}
+\dictentry{рассуждая, как и в [2]} {reasoning as in [2];}
+\dictentry{рассуждения} {reasoning;\\
+  \textbf{\dot \word, аналогичные вышеприведенным} reasoning similar to the foregoing;
+}
+\dictentry{резюмировать} {summarize;}
+\dictentry{рекуррентный} {recurrent;}
+\dictentry{pекуррентно} {recurrently;\\
+  \textbf{\dot определять \word} define recurrently;
+}
+\dictentry{решение} {solution;\\
+  \textbf{\dot искать \word\ в виде} seek the solution in the form;\\
+  \textbf{нетривиальное \word} nontrivial solution;\\
+  \textbf{сеточное \word} mesh solution;\\
+  \textbf{\word\ Флоке} Floquet solution;
+}
+
+\dictchar{С}
+\dictentry{свертка} {convolution;}
+\dictentry{свойство} {property;\\
+  \textbf{\word\ Гёльдера} H\"older property;
+}
+\dictentry{связность} {connectivity;}
+\dictentry{сетка} {mesh;\\
+  \textbf{пространственно-временная \word} space-time mesh;
+}
+\dictentry{символ} {symbol;\\
+  \textbf{\word\ Кронекера} Kronecker delta;
+}
+\dictentry{симметричный} {symmetric;\\
+  \textbf{\dot \word\ относительно точки} symmetric about a point;
+}
+\dictentry{сингулярно возмущенный} {singularly perturbed;}
+\dictentry{система} {system;\\
+  \textbf{\word\ дифференциальных уравнений} differential equation system;\\
+  \textbf{лабораторная \word\ координат} laboratory coordinate system;\\
+  \textbf{полная \word} complete system;\\
+  \textbf{\word\ Пфаффа} Pfaffian system;
+}
+\dictentry{сколь угодно малый} {arbitrarily small;}
+\dictentry{слабо непрерывен (компактен и т.\,д.)} {weakly continuous (compact, etc.);}
+\dictentry{следовательно} {hence, consequently;}
+\dictentry{следствие (\textit{напр.} теоремы)} {corollary;}
+\dictentry{следуя работе [1]} {following [1];}
+\dictentry{случай, когда \ldots} {the case in which (а не when) \ldots;}
+\dictentry{смысл} {sense, meaning;\\
+  \textbf{\dot в некотором \word е} in a sense;
+}
+\dictentry{снабжать} {equip (\eg This equation is equipped with conventional boundary conditions.), furnish, endow (\eg We assume that $C^*(\Delta)$ is endowed with the weak norm.);}
+\dictentry{собственный вектор} {eigenvector;}
+\dictentry{собственное пространство} {eigenspace;}
+\dictentry{собственное число} {eigenvalue;\\
+  \textbf{кратное \word} multiple eigenvalue;\\
+  \textbf{простое \word} simple eigenvalue;
+}
+\dictentry{совместно с} {in conjunction with (\eg Theorems 0.1--0.3, in conjunction with (3.10) yield sufficient information for the investigation of \ldots);}
+\dictentry{совокупность} {totality, ensemble, aggregate, collection;\\
+  \textbf{\dot \word\ аргументов} totality of arguments;
+}
+\dictentry{соответствующий} {corresponding, appropriate, suitable, proper;\\
+  \textbf{\dot~\word им образом} properly;
+  \textbf{\dot~собственный вектор, \word\ данному собственному значению} the eigenvector corresponding to this eigenvalue;
+  \textbf{\dot~если сделать \word\ замену переменных, мы получим (1)} appropriate variable change yields (1);
+}
+\dictentry{сохранить члены уравнения} {retain the terms;}
+\dictentry{с точностью до знака} {to within the sign;}
+\dictentry{с точностью до константы} {to within an arbitrary constant;}
+\dictentry{стремиться к \ldots при \ldots} {tend to \ldots for (with, when) \ldots;}
+\dictentry{строго положительный} {strictly positive;}
+\dictentry{сужение} {restriction;\\
+ \textbf{\dot \word я функций из $\chi$ на $\mathbf{R}^n \times [s, T]$} restrictions of functions from $\chi$ to $\mathbf{R}^n \times [s, T]$;
+}
+\dictentry{сумма} {sum;\\
+  \textbf{\dot \word\ по} the sum over;\\
+  \textbf{прямая \word\ пространств} direct sum of spaces;
+}
+\dictentry{суммируемый (который можно просуммировать)} {summable;}
+\dictentry{с учетом \ldots} {with \ldots  taken into account (\eg the set of eigenvalues with multiplicity taken into account);}
+\dictentry{счисление} {calculus (\eg operational calculus);}
+
+\dictchar{Т}
+\dictentry{так (вводн. слово)} {for example, а не so;}
+\dictentry{так же \ldots как и} {as \ldots as;}
+\dictentry{таким образом} {thus, а не so;}
+\dictentry{теорема} {theorem;\\
+  \textbf{\dot \word\ о разрешимости системы (1)} theorem on solvability of system (1);\\
+  \textbf{\word\ Асколи"--~Арцела} Ascoli"--~Arzel\`a theorem;\\
+  \textbf{\word\ Банаха"--~Штейнхауса} Banach"--~Steinhaus theorem;\\
+  \textbf{\word\ Биркхофа} Birkhoff theorem;\\
+  \textbf{\word\ единственности} uniqueness theorem;\\
+  \textbf{калибровочная \word} calibration theorem;\\
+  \textbf{\word\ Леви"--~Деспланка} Levy"--~Desplank theorem;\\
+  \textbf{\word\ Парсеваля} Parseval theorem;\\
+  \textbf{\word\ Планчереля} Plancherel theorem;\\
+  \textbf{\word\ сравнения} comparison theorem;\\
+  \textbf{\word\ существования и единственности} existence and uniqueness theorem;\\
+  \textbf{\word\ существования} existence theorem;\\
+  \textbf{\word\ Фубини} Fubini's theorem;\\
+  \textbf{\word\ Шоде о неподвижной точке} Schauder fixed-point theorem;
+}
+\dictentry{точка} {point;\\
+  \textbf{несобственная \word} ideal point;\\
+  \textbf{неподвижная \word\ (уравнения и т.д.)} fixed point;\\
+  \textbf{предельная \word} limit (а не limiting) point;
+}
+\dictentry{точность} {accuracy, precision;\\
+  \textbf{\dot с \word ю до} up to;
+  \textbf{\dot с \word ю до знака} to within the sign;
+}
+\dictentry{точный} {exact;}
+\dictentry{то, что они малы, показывается на примере уравнения (1)} {that they are small is shown by the example of Eq. (1).;}
+\dictentry{тройка} {triple;}
+
+\dictchar{У}
+\dictentry{удовлетворять} {satisfy, meet;\\
+  \textbf{\dot \word\ условиям} satisfy the conditions;
+  \textbf{\dot \word\ требованиям} meet the requirements;
+}
+\dictentry{умножать на} {multiply by;\\
+  \textbf{\dot \word\ слева} premultiply (\textit{or} left-multiply);
+  \textbf{\dot \word\ справа} postmultiply (\textit{or} right-multiply);
+}
+\dictentry{уравнение} {equation;\\
+  \textbf{\word\ Айри} Airy equation;\\
+  \textbf{\word\ Брио"--~Буке} Briot"--~Bouquet equation;\\
+  \textbf{\word\ в частных производных} partial differential equation;\\
+  \textbf{\word\ Гельмгольца} Helmholtz equation;\\
+  \textbf{Диофантово \word} Diophantine equation;\\
+  \textbf{дифференциальные \word я Фукса} Fuchsian differential equations;\\
+  \textbf{интегральное \word} integral equation;\\
+  \textbf{\word\ Ито} Ito equation;\\
+  \textbf{\word\ Кортевега-де Фриза} Korteweg-de Vries equation;\\
+  \textbf{\word я Навье"--~Стокса} Navier"--~Stokes equations;\\
+  \textbf{обыкновенное дифференциальное \word} ordinary differential equation;\\
+  \textbf{\word\ Ора"--~Зоммерфельда} Orr"--~Sommerfeld equation;\\
+  \textbf{\word\ Риккати} Riccati equation;\\
+  \textbf{характеристическое \word} characteristic equation;
+}
+\dictentry{усиливать утверждение} {strengthen the assertion;}
+\dictentry{условие} {condition, statement;\\
+  \textbf{вышеупомянутое \word} foregoing condition;\\
+  \textbf{достаточное \word} sufficient condition;\\
+  \textbf{\word\ задачи} statement of the problem;\\
+  \textbf{\word я Каратеодори} Carath\'eodory conditions;\\
+  \textbf{краевое \word} boundary condition;\\
+  \textbf{\word	Липшица} Lipschitz condition;\\
+  \textbf{начальное \word} initial condition;\\
+  \textbf{необходимое \word} necessary condition;\\
+  \textbf{необходимое и достаточное \word} necessary and sufficient condition;\\
+  \textbf{однородное краевое \word} homogeneous boundary condition;\\
+  \textbf{\word\ Рута"--~Гурвица} Routh"--~Hurwitz condition;\\
+  \textbf{сильное \word} strong condition;\\
+  \textbf{слабое \word} weak condition;\\
+  \textbf{\word\ Хартмана} Hartman condition;
+}
+\dictentry{утверждать} {assert (\eg Lemma asserts that \ldots);}
+\dictentry{утверждение} {assertion, proposition, statement;\\
+  \textbf{обратное \word} converse assertion;
+}
+ 
+\dictchar{Ф}
+\dictentry{функция} {function;\\
+  \textbf{\word\ Бесселя} Bessel function;\\
+  \textbf{векторнозначная \word} vector-valued function;\\
+  \textbf{гипергеометрическая \word} hypergeometric function;\\
+  \textbf{$\delta$-\word\ Дирака} Dirac delta-function;\\
+  \textbf{\word\ Лежандра} Legendre function;\\
+  \textbf{матричнозначная \word} matrix-valued function;\\
+  \textbf{однозначная \word} single-valued (\cor unambiguous) function;\\
+  \textbf{сеточная \word} mesh function;\\
+  \textbf{\word\ с ограниченной вариацией} a function of bounded variation;\\
+  \textbf{\word\ Тичмарша} Titchmarsh function;\\
+  \textbf{\word\ Тичмарша"--~Вейла} Titchmarsh-Weyl function;\\
+  \textbf{\word\ Ханкеля} Hankel function;\\
+  \textbf{\word\ Хэвисайда} Heaviside unit function;
+}
+
+\dictchar{Ц}
+\dictentry{цепь} {chain;\\
+  \textbf{вложенная \word\ Маркова} imbedded Markov chain;
+}
+  
+\dictchar{Ч}
+\dictentry{частный случай} {special case, а не particular case;}
+\dictentry{часть} {side;\\
+  \textbf{\dot в левой \word и} in the left side of (\cor on the left of);
+  \textbf{\dot главная \word\ интеграла} principal part of the integral;\\
+  \textbf{левая \word} left (\cor left-hand) side;\\
+  \textbf{правая \word} right (\cor right-hand) side;\\
+  \textbf{целая \word} integral part (\cor the greatest integer in);
+}
+\dictentry{через} {in terms of, through, via;\\
+  \textbf{\dot выражать через \ldots}  express in terms of \ldots;
+}
+\dictentry{черта} {bar;\\
+  \textbf{\dot Черта над буквой обозначает комплексно"=сопряжённую величину.}
+  The bar over a letter indicates a complex-conjugate.;
+}
+\dictentry{число} {number;\\
+  \textbf{число обусловленности} conditioning number;
+}
+
+\dictchar{Ш}
+\dictentry{шаблон} {stencil;}
+\dictentry{штрих} {prime;\\
+  \textbf{\dot \word\ у переменной обозначает \ldots}\ a prime on a variable indicates \ldots;
+  \textbf{\dot~величина со \word ом} primed quantity;
+}
+\dictentry{шар} {ball;\\
+  \textbf{единичный \word} unit ball;
+}
+
+\end{document} 
