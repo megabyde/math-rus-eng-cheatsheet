@@ -20,7 +20,6 @@ jobs:
       - name: Build
         uses: dante-ev/latex-action@2021-A
         with:
-          working_directory: public
           root_file: cheatsheet.tex
           compiler: pdflatex
 
