@@ -2,20 +2,29 @@ name: CI
 
 on:
   push:
-    branches: master
+    branches: main
   pull_request:
-    branches: master
+    branches: main
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions: 
+      contents: write
 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: pdfLaTeX compilation
+      - name: Build
         uses: dante-ev/latex-action@2021-A
         with:
+          working_directory: public
           root_file: cheatsheet.tex
           compiler: pdflatex
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
