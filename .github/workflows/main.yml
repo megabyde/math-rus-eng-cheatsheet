@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: master
+  pull_request:
+    branches: master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: LTeX compilation
+        uses: dante-ev/latex-action@2021-A
+        with:
+          root_file: cheatsheet.tex
+          compiler: pdflatex
