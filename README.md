@@ -3,7 +3,7 @@
 
 ## Overview
 A cheatsheet for writing English mathematical texts for Russian-speaking authors. 
-The pre-built PDF document can be found [here](megabyde.github.io/math-rus-eng-cheatsheet/cheatsheet.pdf).
+The pre-built PDF document can be found [here](https://megabyde.github.io/math-rus-eng-cheatsheet/cheatsheet.pdf).
 
 ## Acknowledgements
 This cheatsheet is based on the booklet distributed by Department of Foreign
