@@ -1,5 +1,6 @@
 # Math Russian-English Cheatsheet
 [![CI](https://github.com/megabyde/math-rus-eng-cheatsheet/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/megabyde/math-rus-eng-cheatsheet/actions/workflows/main.yml)
+[![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 
 ## Overview
 A cheatsheet for writing English mathematical texts for Russian-speaking authors. 
