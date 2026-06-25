@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install ChkTeX
         run: sudo apt-get update && sudo apt-get install -y chktex
@@ -26,7 +26,7 @@ jobs:
         run: chktex -q -l .chktexrc cheatsheet.tex
 
       - name: Setup Pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v5
 
       - name: Build
         uses: dante-ev/latex-action@2021-A
@@ -37,7 +37,7 @@ jobs:
         run: mkdir -p _site && mv *.pdf _site/
 
       - name: Upload artifacts
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
 
   deploy:
     needs: build
@@ -51,4 +51,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
