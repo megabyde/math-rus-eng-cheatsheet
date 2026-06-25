@@ -10,5 +10,5 @@ The pre-built PDF document can be found [here](https://megabyde.github.io/math-r
 
 ## Acknowledgments
 
-This cheatsheet is based on the booklet distributed by Department of Foreign
-Languages in Moscow Institute of Physics and Technology.
+This cheatsheet is based on the booklet distributed by the Department of Foreign
+Languages at the Moscow Institute of Physics and Technology.

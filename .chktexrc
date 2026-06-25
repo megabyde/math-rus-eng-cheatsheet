@@ -1,0 +1,13 @@
+CmdLine
+{
+  # Intentional macro-heavy dictionary formatting.
+  -n1
+
+  # Intentional Russian/list notation that confuses ChkTeX parsing.
+  -n9
+  -n10
+  -n17
+
+  # Intentional Russian/Babel shorthand punctuation, e.g. "--- and "--.
+  -n18
+}
